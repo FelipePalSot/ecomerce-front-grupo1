@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Nuevo Usuario — Limpieza Pro</title>
-    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
     <link rel="stylesheet" href="registroClientes-style.css" />
 </head>
 <body class="auth">
+
+    <header class="site-header">
+        <div class="container">
+        <a class="brand" href="listaProductos.html">
+            <img src="../../assets/logo.svg" alt="" class="brand__logo" />
+            <!-- <span class="brand__name">LimpiezaPro</span> -->
+        </a>
+        </div>
+    </header>
 
     <main class="auth__container">
         <div class="auth__panel">
             <h1 class="page-title">Crear una cuenta</h1>
 
             <form action="inicioSesion.html" method="get" class="form">
-                <div class="form-field form-field--wide">
+                <div class="form-field">
                     <label for="nombre">Nombre Completo</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
 
-                <div class="form-field form-field--wide">
+                <div class="form-field">
                     <label for="email">Correo Electrónico</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
-                <div class="form-field form-field--wide">
+                <div class="form-field">
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" required>
                 </div>
 
-                <div class="form-field form-field--wide">
-                    <button type="submit" class="btn btn--primary btn--block">Registrarse</button>
+                <div class="form-field">
+                     <div class="btn-container">
+                        <button type="submit" class="btn">Registrarse</button>
+                     </div>
                 </div>
             </form>
 

@@ -13,8 +13,12 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.container{
+  margin: 1rem 0rem 0rem 5rem;
+}
+
 a { 
-  color: var(--clr-primary); 
+  color: #51646c; 
   text-decoration: none; 
 }
 
@@ -23,28 +27,28 @@ a {
   margin: 1.5rem 0 1rem;
 }
 
+.btn-container { /* Nuevo contenedor para el botón */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
 .btn {
-  appearance: none;
-  display: inline-flex; 
-  align-items: center; 
-  justify-content: center;
   gap: .5rem;
   padding: .7rem 1rem;
   border-radius: 14px;
-  border: 1px solid var(--btn-border);
-  background: var(--btn-bg);
-  color: var(--btn-fg);
+  border: 1px solid #a9e5dd;
+  background: #26c43c;
+  color: #808080;
   font-weight: 600;
   font-size: 0.9375rem;
   cursor: pointer;
-  transition: transform .04s ease ;
-  box-shadow: 0 1px 2px rgba(0,0,0,.06);
-  text-decoration: none;
+  width: fit-content; /* El botón se ajusta al contenido */
 }
 
 input {
   width: 100%;
-  padding: .7rem .85rem;
+  padding: .7rem 0.20rem;
   border: 1px solid #dbe7e5;
   border-radius: 10px;
   background: #fff;
@@ -64,7 +68,7 @@ input {
 .auth__container { 
   display: grid; 
   place-items: center; 
-  min-height: calc(100dvh - 140px); 
+  min-height: 37rem; 
 }
 
 .auth__panel {
