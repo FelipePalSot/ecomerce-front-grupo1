@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LimpiezaPro — Finalizar pedido</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="theme-clean">
+  <header class="site-header">
+    <div class="container header__bar">
+      <a class="brand" href="listaProductos.html">
+        <img src="assets/logo.svg" alt="" class="brand__logo" />
+        <span class="brand__name">LimpiezaPro</span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="listaProductos.html">Productos</a>
+        <a class="nav__link" href="carritoCompras.html">Carrito</a>
+        <a class="nav__link" href="inicioSesion.html">Ingresar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container checkout">
+    <h1 class="page-title">Finalizar pedido</h1>
+
+    <form id="checkout-form" action="successPage.html" method="get" novalidate>
+      <div class="grid grid--checkout">
+        <!-- Datos de contacto -->
+        <section class="panel">
+          <h2>Contacto</h2>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nombre">Nombre y apellido</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="dni">DNI</label>
+              <input id="dni" name="dni" type="text" inputmode="numeric" pattern="[0-9]{8}" maxlength="8" required />
+            </div>
+            <div class="form-field">
+              <label for="correo">Correo</label>
+              <input id="correo" name="correo" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-field">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" autocomplete="tel" required />
+            </div>
+          </div>
+        </section>
+
+        <!-- Dirección -->
+        <section class="panel">
+          <h2>Dirección</h2>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="distrito">Distrito</label>
+              <input id="distrito" name="distrito" type="text" placeholder="Ej. Miraflores" required />
+            </div>
+            <div class="form-field form-field--wide">
+              <label for="direccion">Dirección</label>
+              <input id="direccion" name="direccion" type="text" placeholder="Calle, número, interior" required />
+            </div>
+            <div class="form-field">
+              <label for="ref">Referencia (opcional)</label>
+              <input id="ref" name="ref" type="text" placeholder="Frente a parque / cerca a..." />
+            </div>
+          </div>
+        </section>
+
+        <!-- Entrega -->
+        <section class="panel">
+          <h2>Método de entrega</h2>
+          <fieldset class="radios">
+            <label class="radio">
+              <input type="radio" name="envio" value="estandar" checked />
+              <span><strong>Envío</strong> — 2 a 3 días • S/ 9.90</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="envio" value="tienda" />
+              <span><strong>Retiro en tienda</strong> — Hoy • S/ 0.00</span>
+            </label>
+          </fieldset>
+        </section>
+
+        <!-- Resumen -->
+        <aside class="panel panel--sticky" aria-labelledby="resumen">
+          <h2 id="resumen">Resumen</h2>
+          <ul class="mini-cart">
+            <li class="mini-cart__item">
+              <img src="assets/products/detergente-polvo-150g.jpg" alt="" />
+              <span>Detergente en polvo 150 g ×2</span>
+              <strong>S/ 7.00</strong>
+            </li>
+            <li class="mini-cart__item">
+              <img src="assets/products/multiusos-500ml.jpg" alt="" />
+              <span>Limpiador multiusos 500 ml ×1</span>
+              <strong>S/ 7.80</strong>
+            </li>
+          </ul>
+          <dl class="summary">
+            <div class="summary__row"><dt>Subtotal</dt><dd>S/ 14.80</dd></div>
+            <div class="summary__row"><dt>Envío</dt><dd>S/ 9.90</dd></div>
+            <div class="summary__row summary__row--total"><dt>Total</dt><dd><strong>S/ 24.70</strong></dd></div>
+          </dl>
+          <button class="btn btn--primary btn--block" type="submit" form="checkout-form">Confirmar compra</button>
+          <a class="btn btn--ghost btn--block" href="carritoCompras.html">Volver al carrito</a>
+        </aside>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>&copy; <span id="y">2025</span> LimpiezaPro</p>
+    </div>
+  </footer>
+</body>
+</html>

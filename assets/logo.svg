@@ -1,0 +1,32 @@
+<svg width="200" height="48" viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LimpiezaPro">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a9e5dd"></stop>
+      <stop offset="100%" stop-color="#1f9d8f"></stop>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".15"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Ícono: gota + brillo -->
+  <g transform="translate(6,6)" filter="url(#s)">
+    <!-- Gota -->
+    <path d="M18 0 C14 6, 8 12, 8 18 a10 10 0 1 0 20 0c0-6-6-12-10-18z" fill="url(#g)"></path>
+    <!-- Destello -->
+    <circle cx="24.5" cy="7.5" r="3.2" fill="#ffffff" opacity=".9"></circle>
+    <path d="M26.8 6.2l3.6-1M25.8 4.8l1-3.6M24.2 9.2l-3.6 1M23.2 10.6l-1 3.6" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity=".85"></path>
+  </g>
+
+  <!-- Texto marca -->
+  <g transform="translate(56,31)">
+    <text x="0" y="0" font-family="system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="20" fill="#1e2a2f" letter-spacing=".2">
+      Limpieza
+      <tspan fill="#1f9d8f">Pro</tspan>
+    </text>
+    <!-- Subtítulo opcional -->
+    <text x="0" y="12" font-family="system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#51646c">
+      Hogar limpio, vida fresca
+    </text>
+  </g>
+</svg>

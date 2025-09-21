@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LimpiezaPro — Crear cuenta</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="theme-clean auth">
+  <header class="site-header">
+    <div class="container header__bar">
+      <a class="brand" href="listaProductos.html">
+        <img src="assets/logo.svg" alt="" class="brand__logo" />
+        <span class="brand__name">LimpiezaPro</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container auth__container">
+    <section class="auth__panel">
+      <h1 class="page-title">Crear cuenta</h1>
+      <form class="form" action="inicioSesion.html" method="get" novalidate>
+        <div class="form-grid">
+          <div class="form-field form-field--wide">
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="reg-email">Correo electrónico</label>
+            <input id="reg-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="reg-pass">Contraseña</label>
+            <input id="reg-pass" name="password" type="password" autocomplete="new-password" required />
+          </div>
+        </div>
+        <button class="btn btn--primary btn--block" type="submit">Registrarme</button>
+      </form>
+
+      <p class="auth__alt">¿Ya tienes una cuenta?
+        <a class="link" href="inicioSesion.html">Inicia sesión</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>&copy; <span id="y">2025</span> LimpiezaPro</p>
+    </div>
+  </footer>
+</body>
+</html>
