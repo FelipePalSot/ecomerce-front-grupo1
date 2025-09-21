@@ -1,0 +1,103 @@
+
+html, body {
+  height: 100%;
+  background: #ffffff;
+  color: #51646c;
+  font-family: Roboto;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container{
+  margin: 1rem 0rem 0rem 5rem;
+}
+
+a { 
+  color: #51646c; 
+  text-decoration: none; 
+}
+
+.page-title {
+  font-size: 1.35rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.btn-container { /* Nuevo contenedor para el botón */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.btn {
+  gap: .5rem;
+  padding: .7rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #a9e5dd;
+  background: #26c43c;
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  width: fit-content; /* El botón se ajusta al contenido */
+}
+
+input {
+  width: 100%;
+  padding: .7rem 0.20rem;
+  border: 1px solid #dbe7e5;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 0.9375rem;
+  color: #51646c;
+  outline: none;
+}
+
+.form-field label { 
+  display: block; 
+  font-weight: 600; 
+  margin-bottom: .35rem; 
+  color: #51646c; 
+  font-size: 0.875rem; 
+}
+
+.auth__container { 
+  display: grid; 
+  place-items: center; 
+  min-height: 37rem; 
+}
+
+.auth__panel {
+  width: min(520px, 100%);
+  background: #fff; 
+  border: 1px solid #dbe7e5;
+  border-radius: 14px; 
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+.auth .page-title { 
+  text-align: center; 
+  margin-top: 0; 
+}
+.auth .form { 
+  display: grid; 
+  gap: 1rem; 
+}
+
+.auth__alt { 
+  text-align: center; 
+  color: #51646c; 
+}
+
+.link { 
+  font-weight: 700; 
+}
+
+button, .btn { 
+  will-change: transform; 
+}
