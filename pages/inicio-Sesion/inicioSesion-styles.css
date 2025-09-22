@@ -1,36 +1,3 @@
-body {
-  min-height: 100dvh;
-  margin: 0;
-  line-height: 1.5;
-}
-
-:root {
-  /* Tipografía y ritmo */
-  --ff-sans: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
-    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
-  --fs-900: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem);
-  --fs-800: clamp(1.35rem, 1.1rem + 1.1vw, 1.9rem);
-  --fs-700: 1.25rem;
-  --fs-600: 1.125rem;
-  --fs-500: 1rem;
-  --fs-400: 0.9375rem;
-  --fs-300: 0.875rem;
-
-  --sp-1: 0.25rem;
-  --sp-2: 0.5rem;
-  --sp-3: 0.75rem;
-  --sp-4: 1rem;
-  --sp-5: 1.25rem;
-  --sp-6: 1.5rem;
-  --sp-8: 2rem;
-  --sp-10: 2.5rem;
-
-  --radius: 14px;
-  --radius-sm: 10px;
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.08);
-}
 
 html,
 body {
@@ -43,6 +10,8 @@ body {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -56,11 +25,6 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
-}
-
-.container {
-  width: min(1200px, 92%);
-  margin-inline: auto;
 }
 
 .page-title {
@@ -104,22 +68,15 @@ input {
   border: 1px solid #dbe7e5;
   border-radius: 10px;
   background: #fff;
-  font-size: var(--fs-400);
+  font-size: 0.9375rem;
   color: #1e2a2f;
   outline: none;
-}
-input:focus {
-  border-color: #1f9d8f;
-  box-shadow: 0 0 0 3px color-mix(in srgb, #1f9d8f 22%, transparent);
 }
 
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
-  background: linear-gradient(180deg, #f7fbfa, #fff);
   border-bottom: 1px solid #dbe7e5;
-  backdrop-filter: blur(6px);
 }
 
 .header__bar {
@@ -158,24 +115,23 @@ input:focus {
   font-weight: 600;
   margin-bottom: 0.35rem;
   color: #1e2a2f;
-  font-size: var(--fs-300);
-}
-.form-field--wide {
-  grid-column: 1 / -1;
+  font-size: 0.875rem;
 }
 
 .auth__container {
   display: grid;
   place-items: center;
   min-height: 30rem;
+  flex-grow: 1;
 }
+
 .auth__panel {
   width: min(520px, 100%);
   background: #fff;
   border: 1px solid #dbe7e5;
-  border-radius: var(--radius);
-  padding: var(--sp-6);
-  box-shadow: var(--shadow-2);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 .auth .page-title {
   text-align: center;
@@ -183,7 +139,7 @@ input:focus {
 }
 .auth .form {
   display: grid;
-  gap: var(--sp-4);
+  gap: 1rem;
 }
 .auth__alt {
   text-align: center;
@@ -194,36 +150,25 @@ input:focus {
 }
 
 .site-footer {
-  margin-top: var(--sp-10);
+  margin-top: 2.5rem;
   background: #f7fbfa;
   border-top: 1px solid #dbe7e5;
 }
-.footer__grid {
+
+.footer {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--sp-4);
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  padding: var(--sp-4) 0;
+  padding: 1rem 0;
+  margin-left: 5rem;
 }
 
 :focus-visible {
   outline: 3px solid #0b6b60;
   outline-offset: 2px;
   border-radius: 6px;
-}
-
-
-
-.theme-clean {
-  background: radial-gradient(
-        1200px 600px at -15% -25%,
-        #e6faf6 0%,
-        transparent 50%
-      )
-      fixed,
-    radial-gradient(900px 540px at 115% -10%, #eefcf9 0%, transparent 50%) fixed,
-    #fff;
 }
 
 button,
