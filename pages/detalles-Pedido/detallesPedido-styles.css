@@ -109,7 +109,6 @@ img { max-width: 100%; display: block; }
 .btn--block { width: 100%; }
 
 input {
-  width: 100%;
   padding: .7rem .85rem;
   border: 1px solid var(--clr-border);
   border-radius: 10px;
